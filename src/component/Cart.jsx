@@ -9,11 +9,11 @@ const Cart = () => {
       <div className="row">
         {state.map((x) => (
           <>
-            <div className="col-6 mb-4">
+            <div className="col-6 mb-4 mt-4">
               <img src={x.image} alt="" height={300} width={300} />
             </div>
 
-            <div className="col-6">
+            <div className="col-6 mb-4 mt-4">
               <h3>{x.title}</h3>
             </div>
           </>
