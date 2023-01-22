@@ -26,7 +26,8 @@ export const handleCart = (state = cart, action) => {
         case ActionTypes.DELETE_CART:
            const finddata = state.find((x)=> x.id === product.id);
            if(finddata.qty === 1){
-            state.filter((x)=>x.id !== finddata.id);
+            return state.filter((x) => x.id !== finddata.id);
+            
            }
            else{
             return state.map((x)=> x.id === finddata.id ? {...x,qty:x.qty-1} : x)
