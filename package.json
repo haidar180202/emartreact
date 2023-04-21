@@ -1,6 +1,7 @@
 {
   "name": "emart",
   "version": "0.1.0",
+  "homepage": "https://haidar180202.github.io/emartreact",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -9,6 +10,7 @@
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-loading-skeleton": "^3.1.0",
@@ -22,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
