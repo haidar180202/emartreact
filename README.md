@@ -1,2 +1,2 @@
 # emartreact
-aplikasi jual beli react
+Cart simulation in e-commerse app -> crud simulation and get api with restfull methode and implementation simply redux 
